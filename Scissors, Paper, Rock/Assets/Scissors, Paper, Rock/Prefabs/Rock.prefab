@@ -10,10 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 497460}
   - component: {fileID: 3378350}
-  - component: {fileID: 6546960}
   - component: {fileID: 2335936}
-  - component: {fileID: 5446940}
-  - component: {fileID: 11455548}
   - component: {fileID: 114623833536093126}
   m_Layer: 0
   m_Name: Rock
@@ -45,27 +42,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 166624}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &6546960
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 166624}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2335936
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -108,59 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &5446940
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 166624}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 1
-  m_Constraints: 56
-  m_CollisionDetection: 1
---- !u!114 &11455548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 166624}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4093d2646d6714512a172172b1279fa5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UseDefaultMecanim: 1
-  ShouldResetPosition: 1
-  ResetPositionSpeed: 0.5
-  GroundDistanceTolerance: 0.05
-  InitialInvincibilityDuration: 3
-  JumpForce: 1000
-  NumberOfJumpsAllowed: 2
-  CooldownBetweenJumps: 0
-  JumpsAllowedWhenGroundedOnly: 0
-  JumpReleaseSpeed: 50
-  JumpProportionalToPress: 1
-  MinimalDelayBetweenJumps: 0.02
-  UngroundedDurationAfterJump: 0.2
-  _numberOfJumpsLeft: 0
 --- !u!114 &114623833536093126
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -23,7 +23,10 @@ namespace MoreMountains.InfiniteRunnerEngine
 	    public Vector3 DeathShakeVector = new Vector3(2f,2f,2f);
 		/// the sound fx we'll play on death
 		public AudioClip DeathSoundFx;
-
+		/// the forms that the player can switch to --- Scissors, Paper, Rock
+		public GameObject avatar1, avatar2, avatar3;
+		// variable contains which avatar is on and active
+		int whichAvatarIsOn = 1;
 
 		protected float _horizontalRotationSpeed=5f;
 		protected float _verticalRotationSpeed=2f;
@@ -50,7 +53,8 @@ namespace MoreMountains.InfiniteRunnerEngine
 		{
 			base.Update();
 	        HandleOrientation();
-	        HandleReactors();
+            HandleReactors();
+			TransformPlayer();
 		}
 
 		/// <summary>
@@ -196,5 +200,82 @@ namespace MoreMountains.InfiniteRunnerEngine
 				StartCoroutine(BarrelRoll(1f));
 			}
 		}
+		
+		/// <summary>
+		/// Changes made to script to adapt it to Scissors, Paper, Rock
+		/// </summary>
+		public void TransformPlayer()
+		{
+
+
+			if (Input.GetKeyDown("q"))
+			{
+				whichAvatarIsOn = 1;
+				
+				SwitchAvatar();
+			}
+			else if (Input.GetKeyDown("w"))
+			{
+				whichAvatarIsOn = 2;
+				
+				SwitchAvatar();
+			}
+			else if (Input.GetKeyDown("e"))
+			{
+				whichAvatarIsOn = 3;
+				Debug.Log($"Transforming into Rock and whichAvatarIsOn is now:" + whichAvatarIsOn);
+				SwitchAvatar();
+			}
+		}
+
+		// public method to switch avatars by pressing UI button
+		public void SwitchAvatar()
+		{
+
+			// processing whichAvatarIsOn variable
+			switch (whichAvatarIsOn)
+			{
+
+				// if the first avatar is on
+				case 1:
+					Debug.Log("Transforming into Scissors and whichAvatarIsOn is now:" + whichAvatarIsOn);
+
+					// then the second avatar is on now
+					whichAvatarIsOn = 1;
+
+					// disable the first one and anable the second one
+					avatar1.gameObject.SetActive(true);
+					avatar2.gameObject.SetActive(false);
+					avatar3.gameObject.SetActive(false);
+					break;
+
+				// if the second avatar is on
+				case 2:
+					Debug.Log("Transforming into Paper and whichAvatarIsOn is now:" + whichAvatarIsOn);
+
+					// then the first avatar is on now
+					whichAvatarIsOn = 2;
+
+					// disable the second one and anable the first one
+					avatar1.gameObject.SetActive(false);
+					avatar2.gameObject.SetActive(true);
+					avatar3.gameObject.SetActive(false);
+					break;
+
+				case 3:
+					Debug.Log("Transforming into Rock and whichAvatarIsOn is now:" + whichAvatarIsOn);
+
+					// then the first avatar is on now
+					whichAvatarIsOn = 3;
+
+					// disable the second one and anable the first one
+					avatar1.gameObject.SetActive(false);
+					avatar2.gameObject.SetActive(false);
+					avatar3.gameObject.SetActive(true);
+					break;
+			}
+
+		}
+
 	}
 }
