@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8118798685676448484}
   m_Layer: 0
   m_Name: Paper
-  m_TagString: Untagged
+  m_TagString: Paper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5072,7 +5072,7 @@ MonoBehaviour:
   ResetPositionSpeed: 0.5
   GroundDistanceTolerance: 0.05
   InitialInvincibilityDuration: 3
-  FlyForce: 20
+  FlyForce: 40
   MaximumVelocity: 5
   RocketContainer: {fileID: 4590855969195254172}
   ActualRocket: {fileID: 3443553831286841362}
@@ -10636,7 +10636,7 @@ GameObject:
   - component: {fileID: 7568687007742944658}
   m_Layer: 0
   m_Name: Rock
-  m_TagString: Untagged
+  m_TagString: Rock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

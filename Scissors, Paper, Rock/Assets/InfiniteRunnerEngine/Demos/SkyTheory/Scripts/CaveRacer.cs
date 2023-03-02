@@ -26,7 +26,7 @@ namespace MoreMountains.InfiniteRunnerEngine
 		/// the forms that the player can switch to --- Scissors, Paper, Rock
 		public GameObject avatar1, avatar2, avatar3;
 		// variable contains which avatar is on and active
-		int whichAvatarIsOn = 1;
+		public int whichAvatarIsOn = 1;
 
 		protected float _horizontalRotationSpeed=5f;
 		protected float _verticalRotationSpeed=2f;
@@ -238,7 +238,7 @@ namespace MoreMountains.InfiniteRunnerEngine
 
 				// if the first avatar is on
 				case 1:
-					Debug.Log("Transforming into Scissors and whichAvatarIsOn is now:" + whichAvatarIsOn);
+					//Debug.Log("Transforming into Scissors and whichAvatarIsOn is now:" + whichAvatarIsOn);
 
 					// then the second avatar is on now
 					whichAvatarIsOn = 1;
@@ -247,11 +247,15 @@ namespace MoreMountains.InfiniteRunnerEngine
 					avatar1.gameObject.SetActive(true);
 					avatar2.gameObject.SetActive(false);
 					avatar3.gameObject.SetActive(false);
+
+					// set tag to scissors for gate check
+					this.gameObject.tag = "Scissors";
+					Debug.Log("Tag is now set to: " + this.gameObject.tag);
 					break;
 
 				// if the second avatar is on
 				case 2:
-					Debug.Log("Transforming into Paper and whichAvatarIsOn is now:" + whichAvatarIsOn);
+					//Debug.Log("Transforming into Paper and whichAvatarIsOn is now:" + whichAvatarIsOn);
 
 					// then the first avatar is on now
 					whichAvatarIsOn = 2;
@@ -260,10 +264,14 @@ namespace MoreMountains.InfiniteRunnerEngine
 					avatar1.gameObject.SetActive(false);
 					avatar2.gameObject.SetActive(true);
 					avatar3.gameObject.SetActive(false);
+
+					// set tag to scissors for gate check
+					this.gameObject.tag = "Paper";
+					Debug.Log("Tag is now set to: " + this.gameObject.tag);
 					break;
 
 				case 3:
-					Debug.Log("Transforming into Rock and whichAvatarIsOn is now:" + whichAvatarIsOn);
+					//Debug.Log("Transforming into Rock and whichAvatarIsOn is now:" + whichAvatarIsOn);
 
 					// then the first avatar is on now
 					whichAvatarIsOn = 3;
@@ -272,6 +280,10 @@ namespace MoreMountains.InfiniteRunnerEngine
 					avatar1.gameObject.SetActive(false);
 					avatar2.gameObject.SetActive(false);
 					avatar3.gameObject.SetActive(true);
+
+					// set tag to scissors for gate check
+					this.gameObject.tag = "Rock";
+					Debug.Log("Tag is now set to: " + this.gameObject.tag);
 					break;
 			}
 
