@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 3193785334179473638}
   - component: {fileID: 2618847076490553135}
   - component: {fileID: -9017213521278336719}
-  - component: {fileID: 837330576092559429}
+  - component: {fileID: 159634116206555532}
+  - component: {fileID: 304904965413036910}
   m_Layer: 0
-  m_Name: Gate
+  m_Name: Gate - Paper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: b1edef0aa4d7c3b4c9547b9ecb8f3f9e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -130,7 +131,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &837330576092559429
+--- !u!114 &159634116206555532
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -139,6 +140,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1291867444777305364}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40256a2567e897843a64a71f7b120980, type: 3}
+  m_Script: {fileID: 11500000, guid: 1f8c41f142102ea4499c01472b491682, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &304904965413036910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291867444777305364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6ac1e7c2d882824094aebacfa7c5e0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PickEffect: {fileID: 0}
+  PickSoundFx: {fileID: 0}
+  PointsToAdd: 1

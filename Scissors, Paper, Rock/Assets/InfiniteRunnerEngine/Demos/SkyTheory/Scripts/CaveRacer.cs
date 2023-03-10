@@ -223,7 +223,6 @@ namespace MoreMountains.InfiniteRunnerEngine
 			else if (Input.GetKeyDown("e"))
 			{
 				whichAvatarIsOn = 3;
-				Debug.Log($"Transforming into Rock and whichAvatarIsOn is now:" + whichAvatarIsOn);
 				SwitchAvatar();
 			}
 		}
@@ -250,7 +249,7 @@ namespace MoreMountains.InfiniteRunnerEngine
 
 					// set tag to scissors for gate check
 					this.gameObject.tag = "Scissors";
-					Debug.Log("Tag is now set to: " + this.gameObject.tag);
+					//Debug.Log("Tag is now set to: " + this.gameObject.tag);
 					break;
 
 				// if the second avatar is on
@@ -267,7 +266,7 @@ namespace MoreMountains.InfiniteRunnerEngine
 
 					// set tag to scissors for gate check
 					this.gameObject.tag = "Paper";
-					Debug.Log("Tag is now set to: " + this.gameObject.tag);
+					//Debug.Log("Tag is now set to: " + this.gameObject.tag);
 					break;
 
 				case 3:
@@ -283,7 +282,7 @@ namespace MoreMountains.InfiniteRunnerEngine
 
 					// set tag to scissors for gate check
 					this.gameObject.tag = "Rock";
-					Debug.Log("Tag is now set to: " + this.gameObject.tag);
+					//Debug.Log("Tag is now set to: " + this.gameObject.tag);
 					break;
 			}
 

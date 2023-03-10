@@ -5015,7 +5015,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 20.546982, y: 1.7582779}
+  m_Offset: {x: 27.713684, y: 13.4626465}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -5026,7 +5026,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 477.46628, y: 210.70927}
+  m_Size: {x: 419.22345, y: 138.30264}
   m_EdgeRadius: 0
 --- !u!50 &5265771414251951280
 Rigidbody2D:
@@ -5072,7 +5072,7 @@ MonoBehaviour:
   ResetPositionSpeed: 0.5
   GroundDistanceTolerance: 0.05
   InitialInvincibilityDuration: 3
-  FlyForce: 40
+  FlyForce: 200
   MaximumVelocity: 5
   RocketContainer: {fileID: 4590855969195254172}
   ActualRocket: {fileID: 3443553831286841362}
@@ -5084,6 +5084,7 @@ MonoBehaviour:
   avatar1: {fileID: 5583054757640301442}
   avatar2: {fileID: 808107123493120143}
   avatar3: {fileID: 8227996922046469096}
+  whichAvatarIsOn: 1
 --- !u!1 &2613383848139661391
 GameObject:
   m_ObjectHideFlags: 0
