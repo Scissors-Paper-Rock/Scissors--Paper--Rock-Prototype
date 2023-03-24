@@ -5043,7 +5043,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -5072,7 +5072,7 @@ MonoBehaviour:
   ResetPositionSpeed: 0.5
   GroundDistanceTolerance: 0.05
   InitialInvincibilityDuration: 3
-  FlyForce: 200
+  FlyForce: 1000
   MaximumVelocity: 5
   RocketContainer: {fileID: 4590855969195254172}
   ActualRocket: {fileID: 3443553831286841362}

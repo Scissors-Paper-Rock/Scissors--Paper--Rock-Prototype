@@ -10,12 +10,12 @@ namespace MoreMountains.InfiniteRunnerEngine
 	public class Rocket : PlayableCharacter 
 	{
 		/// The force applied when pressing the main button
-		public float FlyForce = 20f;
+		public float FlyForce = 200f;
 		/// The maximum velocity
 		public float MaximumVelocity = 5f;
 
 		protected bool _boosting=false;
-
+		protected bool _boostingDown = false;
 		/// <summary>
 		/// On Update
 		/// </summary>
@@ -48,7 +48,7 @@ namespace MoreMountains.InfiniteRunnerEngine
 		/// <summary>
 		/// When pressing the main action button for the first time we start boosting
 		/// </summary>
-		public override void MainActionStart()
+		public override void UpStart()
 		{
 			_boosting=true;
 		}
@@ -56,11 +56,24 @@ namespace MoreMountains.InfiniteRunnerEngine
 		/// <summary>
 		/// When we stop pressing the main action button, we stop boosting
 		/// </summary>
-		public override void MainActionEnd()
+		public override void UpEnd()
 		{
 			_boosting=false;
 		}
 
+        #region Scissors, Paper, Rock Changes
+
+        public override void DownStart()
+        {
+			_boostingDown = true;
+        }
+		public override void DownEnd()
+		{
+			_boostingDown = false;
+		}
+
+
+		#endregion
 
 		/// <summary>
 		/// When the rocket is boosting we add a vertical force to make it climb. Gravity will handle the rest
@@ -70,7 +83,12 @@ namespace MoreMountains.InfiniteRunnerEngine
 			if (_boosting)
 			{
 				// we make our character jump
-				_rigidbodyInterface.AddForce(Vector3.up * FlyForce * Time.deltaTime );
+				_rigidbodyInterface.AddForce(Vector3.up * FlyForce * Time.deltaTime);
+			}
+			// SPR addition
+			else if (_boostingDown)
+			{
+				_rigidbodyInterface.AddForce(Vector3.down * FlyForce * Time.deltaTime);
 			}
 		}				
 	}
