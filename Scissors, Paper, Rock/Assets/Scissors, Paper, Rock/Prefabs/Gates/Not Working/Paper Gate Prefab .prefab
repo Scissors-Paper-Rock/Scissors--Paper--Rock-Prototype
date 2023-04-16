@@ -36,7 +36,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 619a832204e24de43a806639bd19e5f6,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 619a832204e24de43a806639bd19e5f6,
         type: 3}
@@ -46,7 +46,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 619a832204e24de43a806639bd19e5f6,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 619a832204e24de43a806639bd19e5f6,
         type: 3}
@@ -61,7 +61,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 619a832204e24de43a806639bd19e5f6,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 619a832204e24de43a806639bd19e5f6,
         type: 3}
@@ -71,23 +71,23 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 619a832204e24de43a806639bd19e5f6,
         type: 3}
       propertyPath: m_Name
-      value: Rock Gate Prefab
+      value: 'Paper Gate Prefab '
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 619a832204e24de43a806639bd19e5f6,
         type: 3}
       propertyPath: m_TagString
-      value: Scissors
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1954859237364998489, guid: 619a832204e24de43a806639bd19e5f6,
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 28b37c37d2b7c4f449ad0984d96b7b87, type: 2}
+      objectReference: {fileID: 2100000, guid: b1edef0aa4d7c3b4c9547b9ecb8f3f9e, type: 2}
     - target: {fileID: 1954859237364998489, guid: 619a832204e24de43a806639bd19e5f6,
         type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 
-      objectReference: {fileID: 2100000, guid: a76089cb2d9fdc443b527a5c52c184e9, type: 2}
+      objectReference: {fileID: 2100000, guid: a51db0f69eb2cee46804acddece6dc3e, type: 2}
     - target: {fileID: 8349319222983693523, guid: 619a832204e24de43a806639bd19e5f6,
         type: 3}
       propertyPath: m_IsActive
@@ -97,5 +97,95 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 8349319222983693523, guid: 619a832204e24de43a806639bd19e5f6, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 619a832204e24de43a806639bd19e5f6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4560172469890795960}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 619a832204e24de43a806639bd19e5f6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5286879574037751154}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 619a832204e24de43a806639bd19e5f6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3038235191944538570}
   m_SourcePrefab: {fileID: 100100000, guid: 619a832204e24de43a806639bd19e5f6, type: 3}
+--- !u!1 &6635256549417434168 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 619a832204e24de43a806639bd19e5f6,
+    type: 3}
+  m_PrefabInstance: {fileID: 5824354421467840873}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4560172469890795960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6635256549417434168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f8c41f142102ea4499c01472b491682, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5286879574037751154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6635256549417434168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6ac1e7c2d882824094aebacfa7c5e0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PickEffect: {fileID: 0}
+  PickSoundFx: {fileID: 0}
+  PointsToAdd: 1
+--- !u!61 &3038235191944538570
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6635256549417434168}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
